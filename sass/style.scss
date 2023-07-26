@@ -1,0 +1,59 @@
+@import "mixin";
+
+@import "sidebar";
+@import "menu";
+@import "main-container";
+@import "main-container_right";
+@import "popup";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @include respond(s1200px) {
+    font-size: 50%;
+  }
+}
+body {
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 300;
+  line-height: 1.6;
+}
+.container {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: auto auto 10fr;
+  @include respond(s800px) {
+    grid-template-columns: auto 1fr;
+    padding-bottom: 2rem;
+  }
+  @include respond(s500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-middle {
+  width: 1rem;
+  margin: 0 2rem;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+  background-color: #eee;
+  @include respond(s800px) {
+    display: none;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}

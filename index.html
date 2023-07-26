@@ -3,9 +3,343 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test-05</title>
+    <title>TEST-05</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700,400i|Nunito:300,300i"
+      rel="stylesheet"
+    /> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <h1>THIS IS HEADING</h1>
+    <!-- popup -->
+    <div class="popup_navigation">
+      <input type="checkbox" class="popup_navigation_checkbox" id="navi" />
+      <label for="navi" class="popup_navigation_button">
+        <span class="popup_navigation_icon">&nbsp;</span>
+      </label>
+      <div class="popup_navigation_background">&nbsp;</div>
+      <nav class="popup_navigation_nav">
+        <ul class="popup_navigation_list">
+          <li class="popup_navigation_item">
+            <a href="#" class="popup_navigation_link">Home</a>
+          </li>
+          <li class="popup_navigation_item">
+            <a href="#" class="popup_navigation_link">Profile</a>
+          </li>
+          <li class="popup_navigation_item">
+            <a href="#" class="popup_navigation_link">Calender</a>
+          </li>
+          <li class="popup_navigation_item">
+            <a href="#" class="popup_navigation_link"> Project</a>
+          </li>
+          <li class="popup_navigation_item">
+            <a href="#" class="popup_navigation_link">Time</a>
+          </li>
+          <li class="popup_navigation_item">
+            <a href="#" class="popup_navigation_link"> Chat</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main -->
+    <div class="container">
+      <nav class="navigation">
+        <!-- logo -->
+        <div class="logo_container">
+          <ion-icon class="icon logo" name="aperture-outline"></ion-icon>
+        </div>
+        <div class="nav-container">
+          <div class="icon_open">
+            <ion-icon class="icon_menu" name="home-outline"></ion-icon>
+          </div>
+          <div class="icon_div">
+            <ion-icon class="icon_menu" name="people-outline"></ion-icon>
+          </div>
+          <div class="icon_div">
+            <ion-icon class="icon_menu" name="calendar-outline"></ion-icon>
+          </div>
+          <div class="icon_div">
+            <ion-icon class="icon_menu" name="checkbox-outline"></ion-icon>
+          </div>
+          <div class="icon_div">
+            <ion-icon class="icon_menu" name="time-outline"></ion-icon>
+          </div>
+          <div class="icon_div">
+            <ion-icon class="icon_menu" name="chatbubble-outline"></ion-icon>
+          </div>
+        </div>
+        <ion-icon class="icon icon_question" name="help-outline"></ion-icon>
+      </nav>
+      <div class="menu">
+        <div class="heading">
+          <div class="heading_text">Ziferblat</div>
+          <p class="heading_caption">Teamwork & time management</p>
+        </div>
+        <!-- 1 -->
+        <div class="sub">
+          <div class="sub_heading">Team</div>
+          <ion-icon class="sub_icon" name="chevron-forward-outline"></ion-icon>
+        </div>
+        <div class="sub">
+          <div class="sub_heading">Projects</div>
+          <ion-icon class="sub_icon" name="chevron-down-outline"></ion-icon>
+        </div>
+        <div class="sub_menu">
+          <ul class="sub_menu-list">
+            <li>All projects (4)</li>
+            <li>Design system</li>
+            <li>Make unique design for customer</li>
+            <li>User Flow</li>
+            <li>UX research</li>
+            <li class="bold">Add new project</li>
+          </ul>
+        </div>
+        <!-- 3 -->
+        <div class="sub">
+          <div class="sub_heading">Tasks</div>
+          <ion-icon class="sub_icon" name="chevron-down-outline"></ion-icon>
+        </div>
+        <div class="sub_menu">
+          <ul class="sub_menu-list">
+            <li>All tasks (3)</li>
+            <li>New (1)</li>
+            <li>In progress (1)</li>
+            <li>Done (1)</li>
+
+            <li class="bold">Add new project</li>
+          </ul>
+        </div>
+        <div class="sub">
+          <div class="sub_heading">Reminders</div>
+          <ion-icon class="sub_icon" name="chevron-forward-outline"></ion-icon>
+        </div>
+        <div class="sub">
+          <div class="sub_heading">Messenger</div>
+          <ion-icon class="sub_icon" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="main_container">
+        <!-- 1 -->
+        <div class="container-1">
+          <div class="heading_text">Today, 4 October</div>
+          <div class="search-bar">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            <input
+              class="search"
+              type="search"
+              placeholder="Searching for...."
+            />
+          </div>
+        </div>
+        <div class="container-2">
+          <!-- <div class="heading-container"> -->
+          <div class="main-heading">Recent projects</div>
+          <div class="sub-heading">View all</div>
+          <!-- </div> -->
+
+          <!-- card-1 -->
+          <div class="card card-1">
+            <div class="card-images">
+              <span class="card-image-text card-image-text-1">+3</span>
+              <img
+                class="card-image card-image-1"
+                src="img/1 (Small).jpg"
+                alt=""
+              />
+              <img
+                class="card-image card-image-2"
+                src="img/2 (Small).jpg"
+                alt=""
+              />
+            </div>
+            <div class="menu-icon">
+              <ion-icon
+                class="menu-icon"
+                name="ellipsis-vertical-sharp"
+              ></ion-icon>
+            </div>
+            <div class="text-container">
+              <div class="heading_text grid-text">Design system</div>
+              <p class="heading_caption">Deadline: 18 October</p>
+            </div>
+
+            <div class="progress-container progress-container-1">
+              <p class="progress-bar-text progress-bar-text-1">
+                84 hours / 40%
+              </p>
+              <div class="progress-bar progress-bar-1">
+                <div class="progress-bar-filled progress-bar-filled-1"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD_2 -->
+          <div class="card card-2">
+            <div class="card-images">
+              <span class="card-image-text card-image-text-2">+3</span>
+              <img
+                class="card-image card-image-3"
+                src="img/3 (Small).jpg"
+                alt=""
+              />
+              <img
+                class="card-image card-image-4"
+                src="img/4 (Small).jpg"
+                alt=""
+              />
+            </div>
+            <div class="menu-icon">
+              <ion-icon
+                class="menu-icon"
+                name="ellipsis-vertical-sharp"
+              ></ion-icon>
+            </div>
+            <div class="text-container">
+              <div class="heading_text grid-text">
+                Make unique page for customer
+              </div>
+              <p class="heading_caption">Deadline: 30 October</p>
+            </div>
+
+            <div class="progress-container progress-container-2">
+              <p class="progress-bar-text progress-bar-text-2">
+                108 hours / 75%
+              </p>
+              <div class="progress-bar progress-bar-2">
+                <div class="progress-bar-filled progress-bar-filled-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- reminders -->
+        <div class="reminders-container">
+          <div class="main-heading margin-bottom">Reminders</div>
+          <div class="main-box">
+            <div class="box">
+              <div class="text-box">
+                <p class="heading_caption">Tomorrow, 16:00-18:00</p>
+                <div class="heading_text grid-text">
+                  Discussion of the interm results of the project
+                </div>
+              </div>
+              <a class="btn dotted" href="#">Set reminder</a>
+            </div>
+            <div class="dot-box">
+              <span class="dot dot-1"></span>
+              <span class="dot dot-2"></span>
+              <span class="dot dot-2"></span>
+            </div>
+          </div>
+        </div>
+        <!-- middle line -->
+        <div class="container-middle"></div>
+        <!-- RIGHT SIDE -->
+        <!-- 1 -->
+        <div class="right-container-1">
+          <div class="dot-box flex">
+            <span class="dot dot-1"></span>
+            <span class="dot dot-1"></span>
+            <span class="dot dot-1"></span>
+          </div>
+          <div class="flex-container">
+            <a class="btn filled" href="#">Add project</a>
+            <div class="noti-container">
+              <div class="notification">
+                <ion-icon
+                  class="menu-icon"
+                  name="notifications-outline"
+                ></ion-icon>
+                <span class="dot dot-1 noti-dot"></span>
+              </div>
+              <img class="acc" src="img/3 (Small).jpg" alt="" />
+              <div class="noti-text-box">
+                <div class="caption">User</div>
+                <div class="main-heading">Maria</div>
+              </div>
+              <ion-icon
+                class="menu-icon icon-filled"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <!-- team -->
+        <div class="right-container-2">
+          <div class="main-heading">Team members</div>
+          <div class="image-container">
+            <img class="acc acc-big" src="img/1 (Small).jpg" alt="" />
+            <img class="acc acc-big" src="img/2 (Small).jpg" alt="" />
+            <div class="span-acc">JR</div>
+            <img class="acc acc-big" src="img/3 (Small).jpg" alt="" />
+            <img class="acc acc-big" src="img/4 (Small).jpg" alt="" />
+            <ion-icon class="plus-icon" name="add-outline"></ion-icon>
+          </div>
+
+          <div class="team-text-box">
+            <div class="b-1">
+              <div class="caption">Project time</div>
+              <div class="main-heading">18 hours</div>
+            </div>
+            <div class="b-1">
+              <div class="caption">Tasks in progress</div>
+              <div class="main-heading">2</div>
+            </div>
+            <div class="b-1">
+              <div class="caption">Finished tasks</div>
+              <div class="main-heading">16</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-container-3">
+          <div class="daily-text-box">
+            <div class="main-heading margin-bottom">Daily tasks (3)</div>
+            <div class="sub-heading">Edit</div>
+          </div>
+          <div class="card-container">
+            <div class="daily-card daily-card-1">
+              <p class="daily-text">Add new</p>
+              <ion-icon class="menu-icon plus" name="add-outline"></ion-icon>
+            </div>
+            <div class="daily-card daily-card-2">
+              <div class="caption-container">
+                <span class="dot dot-1"></span>
+                <p class="caption">New</p>
+                <ion-icon name="square-outline"></ion-icon>
+              </div>
+              <p class="daily-text">Change color palette to more bright</p>
+            </div>
+            <div class="daily-card daily-card-3">
+              <div class="caption-container">
+                <span class="dot dot-1 dot-green"></span>
+                <p class="caption">In progress</p>
+                <ion-icon name="square-outline"></ion-icon>
+              </div>
+              <p class="daily-text">Make prototype for mobile version</p>
+            </div>
+            <div class="daily-card daily-card-4">
+              <div class="caption-container">
+                <span class="dot dot-1 dot-green"></span>
+                <p class="caption caption-3">Done</p>
+                <ion-icon class="checkbox" name="checkbox"></ion-icon>
+              </div>
+              <p class="daily-text">Make fixes in homepage</p>
+            </div>
+          </div>
+        </div>
+        <!-- main container end -->
+      </div>
+    </div>
   </body>
 </html>
